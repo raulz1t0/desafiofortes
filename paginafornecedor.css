@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #020060;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .category {
+    margin-bottom: 30px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .category h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  /* Estilo para links dentro das categorias */
+  .category a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .category a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adicionando estilo específico para a categoria "Perfil" */
+  #perfil-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Adicionando estilo específico para a categoria "Notificações" */
+  #notificacoes-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Adicionando estilo específico para a categoria "Calendário da Semana" */
+  #calendario-content {
+    font-size: 16px;
+    line-height: 1.6;
+
+    
+  }
+
+
+  #refeicoes-content {
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+  

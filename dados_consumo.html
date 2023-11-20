@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados de Consumo no Mês</title>
+  <link rel="stylesheet" type="text/css" href="dados_consumo.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #020060;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    table {
+      width: 70%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ecf0f1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #34495e;
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      table {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Dados de Consumo no Mês</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Refeição</th>
+        <th>Quantidade Comprada</th>
+        <th>Quantidade Usada</th>
+        <th>Quantidade Desperdiçada</th>
+        <th>Valor Pago no Mês</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Café da Manhã</td>
+        <td>249 unidades</td>
+        <td>211 unidades</td>
+        <td>38 unidades</td>
+        <td>R$ 1.477</td>
+      </tr>
+      <tr>
+        <td>Almoço</td>
+        <td>462 unidades</td>
+        <td>399 unidades</td>
+        <td>63 unidades</td>
+        <td>R$ 2.079</td>
+      </tr>
+      <tr>
+        <td>Janta</td>
+        <td>297 unidades</td>
+        <td>188 unidades</td>
+        <td>109 unidades</td>
+        <td>R$ 2.450</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="goBack-link">
+    <a href="paginafornecedor.html" class="button">Voltar para a Página do Fornecedor</a>
+  </div>
+</div>
+
+</body>
+</html>

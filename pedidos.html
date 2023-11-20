@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+  <link rel="stylesheet" type="text/css" href="pedidos.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #020060;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 10px; /* Reduzi a margem para melhorar a aparência */
+      color: #ffffff;
+    }
+
+    .order-container {
+      width: 70%;
+      background-color: #34495e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    .order {
+      margin-bottom: 20px;
+      border: 1px solid #ecf0f1;
+      padding: 15px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .order h2 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .order p {
+      color: #ecf0f1;
+      margin-bottom: 8px;
+    }
+
+    .new-order-container {
+      width: 70%;
+      background-color: #34495e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #newOrderForm {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #newOrderForm label {
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    #newOrderForm input {
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ecf0f1;
+      border-radius: 5px;
+    }
+
+    #newOrderForm button {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #newOrderForm button:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      .order-container,
+      .new-order-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Pedidos</h1>
+
+  <div class="order-container">
+    <div class="order">
+      <h2>Pedido mais recente</h2>
+      <p>Itens do Pedido:</p>
+      <ul>
+        <li>15kg de tomate</li>
+        <li>8kg de filé de boi</li>
+      </ul>
+      <p>Total: R$ 320,00</p>
+    </div>
+  </div>
+
+  <div class="new-order-container">
+    <h2>Fazer Novo Pedido</h2>
+    <!-- Formulário para fazer novos pedidos -->
+    <form id="newOrderForm">
+      <label for="itemName">Nome do Item:</label>
+      <input type="text" id="itemName" name="itemName" required>
+
+      <label for="itemQuantity">Quantidade:</label>
+      <input type="number" id="itemQuantity" name="itemQuantity" required>
+
+      <button type="submit">Adicionar ao Pedido</button>
+    </form>
+  </div>
+
+  <div class="goBack-link">
+    <a href="paginafornecedor.html" class="button">Voltar para a Página do Fornecedor</a>
+  </div>
+</div>
+
+
+</body>
+</html>

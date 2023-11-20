@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque</title>
+  <link rel="stylesheet" type="text/css" href="estoque.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #020060;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .items-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .item {
+      background-color: #34495e;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item h2 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .item p {
+      color: #ecf0f1;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estoque</h1>
+
+  <div class="items-container">
+    <div class="item">
+      <h2>Maçãs</h2>
+      <p>Quantidade: 100 unidades</p>
+      <p>Preço por unidade: R$ 1,00</p>
+    </div>
+
+    <div class="item">
+      <h2>Cenouras</h2>
+      <p>Quantidade: 50 unidades</p>
+      <p>Preço por unidade: R$ 0,75</p>
+    </div>
+
+    <div class="item">
+      <h2>Tomates</h2>
+      <p>Quantidade: 75 unidades</p>
+      <p>Preço por unidade: R$ 1,50</p>
+    </div>
+
+    <div class="item">
+      <h2>Carne</h2>
+      <p>Quantidade: 30 kg</p>
+      <p>Preço por kg: R$ 15,00</p>
+    </div>
+
+    <div class="item">
+      <h2>Arroz</h2>
+      <p>Quantidade: 10 kg</p>
+      <p>Preço por kg: R$ 3,50</p>
+    </div>
+
+    <div class="item">
+      <h2>Feijão</h2>
+      <p>Quantidade: 8 kg</p>
+      <p>Preço por kg: R$ 5,00</p>
+    </div>
+
+    <div class="goBack-link">
+        <a href="paginafornecedor.html" class="button">Voltar para a Página do Fornecedor</a>
+      </div>
+
+</body>
+</html>
